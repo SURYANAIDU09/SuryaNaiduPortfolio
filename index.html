@@ -119,20 +119,22 @@
     <!--Contact Section Design-->
     <section class="contact" id="contact">
       <form action="https://api.web3forms.com/submit" method="POST" class="contact">
+          <!--Web3Forms Access Key-->
+          <input type="hidden" name="access_key" value="9c36d14b-4284-435f-8440-a5af44c52acd" />
          <h2 class="heading">Contact <span>Me</span></h2>
 
             <div class="input-box">
-                <input type="hidden" name="access_key" value="9c36d14b-4284-435f-8440-a5af44c52acd">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                
+                <input type="text" name="name" placeholder="Full Name" required />
+                <input type="email" name="email" placeholder="Email Address" required />
             </div>
 
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email subject">           
+                <input type="number" name ="mobile" placeholder="Mobile Number" required />
+                <input type="text" name="subject" placeholder="Email Subject" required/>           
             </div>
-            <textarea name="" id="" cols="30" rows="10"placeholder="Your Message"></textarea>
-            <input type="submit" value="send Message" class="btn">
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="send Message" class="btn" />
         </form>
     </section>
 
